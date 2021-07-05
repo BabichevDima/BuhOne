@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BuhOne</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="hidden__btn _anim-items">&#8593</div>
+
+      <div class="container container__header">
+        <div class="header__block_logo">
+          <img src="./image/logo.png" alt="logo" class="header__img" />
+          <div class="header__logo">BuhOne</div>
+        </div>
+
+        <div class="header__block">
+          <div class="header__contact">
+            <div class="header__wrap">
+              <a href="#" class="header__link">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+              </a>
+              <p class="header__item">8 (111) 222-33-44</p>
+            </div>
+
+            <div class="header__wrap">
+              <a href="#" class="header__link">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+              </a>
+              <p class="header__item">Пн-Пт 10:00-18:00</p>
+            </div>
+
+            <div class="header__wrap">
+              <a href="#" class="header__link">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              </a>
+              <p class="header__item">order@buhone.ru</p>
+            </div>
+
+            <div class="header__wrap">
+              <a href="#" class="header__link">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </a>
+              <p class="header__item">Невский пр. 130</p>
+            </div>
+          </div>
+
+          <div class="header__menu">
+            <div class="header__menu_item">главная</div>
+            <div class="header__menu_item">услуги</div>
+            <div class="header__menu_item">кейсы</div>
+            <div class="header__menu_item">о компании</div>
+            <div class="header__menu_item">контакты</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="top">
+        <div class="container">
+          <div class="slides">
+            <div class="slide slide__active fade">
+              <div class="title top__title _anim-items _anim-no-hide">
+                Бухгалтерские услуги в Санкт-Петербурге
+              </div>
+              <button id="btn_connection" class="button top__button _anim-items">Связь с нами</button>
+            </div>
+
+            <div class="slide fade">
+              <div class="title top__title _anim-items">Мы специализируемся</div>
+              <button class="button top__button _anim-items">Услуги</button>
+            </div>
+
+            <div class="slide fade">
+              <div class="title top__title _anim-items">Компания ИвановПром</div>
+              <button class="button top__button _anim-items">О нас</button>
+            </div>
+
+            <div class="slide fade">
+              <div class="title top__title _anim-items">Фотогаллерея</div>
+              <button class="button top__button _anim-items">Показать больше</button>
+            </div>
+          </div>
+          <div class="top__block">
+            <div class="dots _anim-items">
+              <div class="dot dot__active"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+
+            <div class="top__buttons _anim-items">
+              <div class="top__btn top__btn_prev">
+                &#10094
+              </div>
+              <div class="top__btn top__btn_next">
+                &#10095
+              </div>
+            </div>
+          </div>
+
+          <div class="modal__connection fade">
+            <div class="modal__block">
+              <div class="modal__connection_close">&times;</div>
+              <div class="mb77 title">Связь с нами</div>
+              <form action="#">
+                <div class="contact__information">
+                  <div class="modal__contact_wrap">
+                    <div class="mr30">
+                      <div class="modal__connection_text">Имя</div>
+                      <input
+                        type="text"
+                        class="modal__connection_input"
+                        placeholder="Имя"
+                      />
+                    </div>
+
+                    <div>
+                      <div class="modal__connection_text">Фамилия</div>
+                      <input
+                        type="text"
+                        class="modal__connection_input"
+                        placeholder="Фамилия"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="modal__connection_text">Ваше сообщение</div>
+                    <textarea
+                      class="modal__connection_message"
+                      name="message"
+                      placeholder="Ваше сообщение"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <button class=" modal__connection_button button">
+                  Отправить сообщение
+                </button>
+              </form>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <div class="subtitle _anim-items">Наши услуги</div>
+          <div class="title services__title _anim-items">Мы специализируемся</div>
+          <div class="services__offers mb30">
+            <div class="services__item _anim-items">
+              <div class="services__text">Бухгалтерское обслуживание</div>
+            </div>
+            <div class="services__item _anim-items">
+              <div class="services__text">Бухгалтерское обслуживание</div>
+            </div>
+            <div class="services__item _anim-items">
+              <div class="services__text">Бухгалтерское обслуживание</div>
+            </div>
+          </div>
+          <div class="services__offers">
+            <div class="services__item _anim-items">
+              <div class="services__text">Бухгалтерское обслуживание</div>
+            </div>
+            <div class="services__item _anim-items">
+              <div class="services__text">Бухгалтерское обслуживание</div>
+            </div>
+            <div class="services__item _anim-items">
+              <div class="services__text">Бухгалтерское обслуживание</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <div class="container container__about-us">
+          <div class="about-us__block">
+            <div class="subtitle _anim-items">О нас</div>
+            <div class="title about-us__title _anim-items">
+              Компания
+              <div class="blue">ИвановПром</div>
+            </div>
+            <div class="about-us__text _anim-items">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+              cupiditate soluta qui ex alias error animi esse? Expedita, autem
+              excepturi cum nesciunt amet reiciendis, dolorum consectetur quas
+              eaque mollitia impedit?
+            </div>
+          </div>
+          <div class="about-us__block">
+            <div class="about-us__wrap mb30">
+              <div class="about-us__item _anim-items">
+                <div class="about-us__item_number">90</div>
+                <div class="about-us__item_description">
+                  Завершено крупных сделок
+                </div>
+                <div class="about-us__item_link">Все кейсы</div>
+              </div>
+              <div class="about-us__item _anim-items">
+                <div class="about-us__item_number">90</div>
+                <div class="about-us__item_description">
+                  Завершено крупных сделок
+                </div>
+                <div class="about-us__item_link">Все кейсы</div>
+              </div>
+            </div>
+
+            <div class="about-us__wrap">
+              <div class="about-us__item _anim-items">
+                <div class="about-us__item_number">90</div>
+                <div class="about-us__item_description">
+                  Завершено крупных сделок
+                </div>
+                <div class="about-us__item_link">Все кейсы</div>
+              </div>
+              <div class="about-us__item _anim-items">
+                <div class="about-us__item_number">90</div>
+                <div class="about-us__item_description">
+                  Завершено крупных сделок
+                </div>
+                <div class="about-us__item_link">Все кейсы</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="container">
+          <div class="title gallery__title _anim-items">Фотогаллерея</div>
+          <div class="gallery__block">
+            <div class="gallery__img gallery__img_1 _anim-items"></div>
+            <div class="gallery__img gallery__img_2 _anim-items"></div>
+            <div class="gallery__img gallery__img_3 _anim-items"></div>
+            <div class="gallery__img gallery__img_4 _anim-items"></div>
+          </div>
+
+          <div class="modal fade">
+            <div class="modal__content">
+              <div class="close">&times;</div>
+              <div>
+                <div class="modal__gallery modal__gallery_1"></div>
+                <div class="modal__gallery modal__gallery_2"></div>
+                <div class="modal__gallery modal__gallery_3"></div>
+                <div class="modal__gallery modal__gallery_4"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container container__faq">
+          <div class="faq__block">
+            <div class="subtitle _anim-items">Наши услуги</div>
+            <div class="title faq__title _anim-items">
+              Ответы на
+              <div class="blue">Вопросы</div>
+            </div>
+
+            <div id="tabs" class="faq__tabs">
+              <div class="faq__button faq__button_active _anim-items">
+                <div class="faq__question">
+                  <div class="fag__plus remove">+</div>
+                  <div class="fag__minus">-</div>
+                  <div class="faq__ask">первый вопрос</div>
+                </div>
+                <div class="faq__text faq__text_visible">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eveniet amet et rem labore repellat unde recusandae, aperiam
+                  cumque alias saepe illum quasi nulla corrupti architecto
+                  impedit quia repudiandae id assumenda.
+                </div>
+              </div>
+
+              <div class="faq__button _anim-items">
+                <div class="faq__question">
+                  <div class="fag__plus">+</div>
+                  <div class="fag__minus remove">-</div>
+                  <div class="faq__ask">второй вопрос</div>
+                </div>
+                <div class="faq__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eveniet amet et rem labore repellat unde recusandae, aperiam
+                  cumque alias saepe illum quasi nulla corrupti architecto
+                  impedit quia repudiandae id assumenda.
+                </div>
+              </div>
+
+              <div class="faq__button _anim-items">
+                <div class="faq__question">
+                  <div class="fag__plus">+</div>
+                  <div class="fag__minus remove">-</div>
+                  <div class="faq__ask">третий вопрос</div>
+                </div>
+                <div class="faq__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Eveniet amet et rem labore repellat unde recusandae, aperiam
+                  cumque alias saepe illum quasi nulla corrupti architecto
+                  impedit quia repudiandae id assumenda.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq__block faq__block_img _anim-items"></div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <div class="container__contact">
+            <div class="contact__block">
+              <div class="title contact__title _anim-items">Связь с нами</div>
+              <div class="contact__text _anim-items">
+                У вас остались вопросы? Напишите нам - мы ответим в ближайшее
+                время!
+              </div>
+              <div class="contact__connection">
+                <div class="contact__wrap _anim-items">
+                  <a href="#" class="contact__link">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                  </a>
+                  <p class="contact__item">8 (111) 222-33-44</p>
+                </div>
+                <div class="contact__wrap _anim-items">
+                  <a href="#" class="contact__link">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  </a>
+                  <p class="contact__item">order@buhone.ru</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__form">
+              <form action="#">
+                <div class="contact__information">
+                  <div class="contact__wrap _anim-items">
+                    <div class="mr30">
+                      <div class="text white">Имя</div>
+                      <input
+                        type="text"
+                        class="contact__form_input"
+                        placeholder="Имя"
+                      />
+                    </div>
+
+                    <div>
+                      <div class="text white">Фамилия</div>
+                      <input
+                        type="text"
+                        class="contact__form_input"
+                        placeholder="Фамилия"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="contact__field _anim-items">
+                    <div class="text white">Ваше сообщение</div>
+                    <textarea
+                      class="contact__message"
+                      name="message"
+                      placeholder="Ваше сообщение"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <button class="button contact__sent _anim-items">
+                  Отправить сообщение
+                </button>
+              </form>
+            </div>
+          </div>
+          <div id="map" class="map _anim-items"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__text _anim-items">2019 (с) Все права защищены. БухОне.ру</div>
+        <div class="footer__text _anim-items">Разработано: BuhOne</div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
